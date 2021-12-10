@@ -1,0 +1,338 @@
+<html lang="ru">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylee.css">
+  <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=T5AmJhqMvOQKb-BMq-Dmgrw7O5hVFquYqbiru9O8CrcMpAgZYOypf8Z5PAbaaabPCIo8MneTW8hEeR0ChLfs9j9bhKHajtZymo2VMccjYPU" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/slick.min.js" defer></script>
+  <style>
+    body {
+        background-image: url(img/bg.jpg);
+    }
+
+    a {
+        color: rgb(255, 0, 0);
+
+    }
+</style>
+
+</head>
+<body>
+
+  <div class="d-flex flex-column flex-nowrap">
+  
+    <div class="order-md-1 order-sm-1 order-1">
+      <header>
+        <div class="container-fluid my-3">
+          <div class="container p-3">
+            <div><img class="w-30" id="logo" src="img/logo.png" alt="logo"> Задание</div>
+          </div>
+        </div>
+      </header>
+    </div> 
+
+    <div class="order-md-2 order-sm-2 order-2">
+      <nav>
+        <div class="container page my-3 p-3">
+          <div class="row">
+            <div class="col-md m-1">
+              <div class="h-100 py-3 p-3" id="nav1">
+                <a href="index.html">Ссылка меню 1</a>
+              </div>
+            </div>
+            <div class="col-md m-1">
+              <div class="h-100 py-3 p-3" id="nav2">
+                <a href="new.html">Ссылка меню 2</a>
+              </div>
+            </div>
+            <div class="col-md m-1">
+              <div class="h-100 py-3 p-3" id="nav3">
+                <a href = "#popup" id = "for-popup-form">Ссылка меню 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    
+
+    <div class="order-md-5 order-sm-5 order-5">
+      <div class="container p-3 my-3">
+        <h2>Калькулятор</h2>
+        Введите цену товара:
+        <input name="field1" type="text"> <br><br>
+        Введите количество : 
+        <input name="field2" type="text"><br><br>
+        <button id="count">Посчитать</button>
+        <strong>Результат: </strong><em id="result"></em>
+      </div>
+    </div>  
+    
+    <div class="container order-md-5 order-sm-5 order-5 p-3 my-3">
+      <form id="form">
+        <div class="heading">
+          <h2 class="heading-title">Выберите макияж</h2>
+        </div>
+
+        <div class="calc-section">
+          <strong>Тип товара</strong><br>
+          <select name="myselect">
+            <option value="1">Повседневный</option>
+            <option value="2">Вечерний</option>
+            <option value="3">Свадебный</option>
+          </select>
+        </div>
+
+        <div class="calc-section">
+          <label class="checkbox-wrapper title-bold section-title .section-title--vertical-center">
+            <span class="title__inline">Колличество человек</span>
+            <input type="number" min="1" max="200" value="1" id="square-input" class="title__inline input-short" />
+            <span class="title__inline"></span>
+          </label>
+        </div>
+        
+        <div class="calc-section" id="radios">
+          <label class="radio-wrapper" data-name="mobile">
+            <input type="radio" class="radio" name="type" value="1" checked />  Голливудский
+          </label>
+          <label class="radio-wrapper" data-name="mobile">
+            <input type="radio" class="radio" name="type" value="2" /> Смоки
+          </label>
+        </div>
+        
+        <!--  -->
+        <div class="calc-section" id="checkbox">
+          <label class="radio-wrapper">
+            <input type="checkbox" class="radio" name="ceiling" value="1500" /> Укладка
+          </label>
+        </div>
+
+        <!--  -->
+        <div class="calc-price">
+          <div class="calc-price-title">Стоимость:</div>
+          <div class="calc-price-value">
+            <span id="total-price">0</span>
+            рублей
+          </div>
+        </div>
+      
+      </form>
+    </div>
+
+   
+
+    <div class="order-md-3 order-sm-3 order-3">
+      <div class="container p-3 my-3">
+        <li><a href="example.com">Ссылка 1</a></li>
+                        <li><a href="https://example.com">Ссылка 2</a></li>
+                        <li><a href="ftp://stonehub.ru/FAQ/manual.txt">Ссылка 3</a></li>
+                        <li><a href="ftp://drago:password@stonehub.ru/FAQ/manual.txt">Ссылка 4</a></li>
+                        <li><a href="https://kubsu.ru/ru#end">Ссылка 5</a></li>
+                        <li><a href=“#top”>Ссылка 6</a></li>
+                        <li><a href="https://kubsu.ru/ru/abiturient/news">Ссылка 7</a></li>
+                        <li>
+                            <nav>
+                                <ul>
+                                    <li><a href="https://kubsu.ru/ru/university"> Title 1</a></li>
+                                    <li><a href="https://kubsu.ru/ru/education"> Title 2</a></li>
+                                    <li><a href="https://kubsu.ru/ru/science"> Title 3</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li><a>Ссылка 9</a></li>
+                        <li><a href="">Ссылка 10</a></li>
+                        <li><a href="https://kubsu.ru/ru" rel=nofollow>Ссылка 11</a></l>
+                        <li>
+                            <!--noindex--><a href="https://kubsu.ru/ru">Ссылка 12</a></l>
+                        <li><a>Ссылка 13</a></li>
+                        <li><a>Ссылка 14 <br /><a href="http://example.com/">
+                                    <img src="img/tcvetock.jpg" alt="Цветок" style="width: 300px;" />
+                                </a></li>
+                        <map name="primary">
+                            <area shape="circle" coords="150,100,50" href="https://vk.com/drago_d">
+                            <area shape="rect" coords="1,1,50,50"
+                                href="https://seriahd.tv/serials-2021/1121-polovoe-vospitanie-3-sezon-smotret-serial-hd.html">
+                        </map>
+                        <li>Ссылка 15 <br />
+                            <img usemap="#primary" src="img/tcvetock.jpg" alt="Цветок" style="width: 300px;" />
+                        </li>
+                        <li><a href="">Ссылка 16</a></li>
+                        <li><a href="about/files.html">Ссылка 17</a></li>
+                        <li><a href="../index.html">Ссылка 18</a></li>
+                        <li><a href="../../index.html">Ссылка 19</a></li>
+                        <li><a href="/">Ссылка 20</a> </li>
+                        <li><a href="/abouut/page.html">Ссылка 21</a></li>
+                    </ol>
+      </div>
+    </div>
+
+    <div class="order-md-4 order-sm-5 order-5">
+      <div class="container p-3 my-3">
+        <h2>Таблица</h2>
+                        <table border="2">
+
+                            <tr bgcolor="#9370DB">
+                                <th>Колонка 1</th>
+                                <th>Колонка 2</th>
+                                <th>Колонка 3</th>
+                            </tr>
+                            <tr bgcolor="#DDA0DD">
+                                <td colspan="2"> 2, 3</td>
+                                <td>3</td>
+                            </tr>
+                            <tr bgcolor="#9370DB">
+                                <td>4</td>
+                                <td colspan="2"> 5, 6</td>
+                            </tr>
+                            <tr bgcolor="#DDA0DD">
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                            </tr>
+                            <tr bgcolor="#9370DB">
+                                <td rowspan="2"> 10,13</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                            <tr bgcolor="#DDA0DD">
+                                <td> 14</td>
+                                <td>15</td>
+                            </tr>
+
+                        </table>
+      </div>
+    </div>
+
+    <div class="order-md-5 order-sm-4 order-4">
+      <div class="container p-3 my-3">
+        <form action="/" method="POST">
+          Имя:
+          <br>
+          <input type="text" name="firstname">
+          <br>
+          E-mail:<br><input type="email" name="email">
+          <br>
+          Дата рождения:<br><input type="date" name="date">
+          <br>
+          Пол:<br>
+          <input type="radio" name="gender" checked="checked"> Мужской
+          <input type="radio" name="gender"> Женский
+          <br>
+          Количество конечностей:<br>
+          <input type="radio" name="4" checked="checked"> 4
+          <input type="radio" name="4"> 3
+          <input type="radio" name="4"> 2
+          <input type="radio" name="4"> 1
+          <input type="radio" name="4"> 0 
+          <br>
+          <p id="anchor"></p>Cверхспособности:<br>
+          <select name="superman" size="3" multiple>
+              <option value="1">Бессмертие</option>
+              <option value="2" selected="selected">Прохождение сквозь стены</option>
+              <option value="3">Левитация</option>
+          </select>
+          <br>
+          Биография:<br><textarea rows="4" cols="30"></textarea>
+          <br>
+          <input type="checkbox"> С контрактом ознакомлен(a) 
+          <br>
+          <input type="submit" id="send" value="Отправить">
+        </form>
+      </div>
+    </div>
+
+    <div class="container order-md-5 order-sm-5 order-5 p-3 my-3">
+      <div class="slider">
+       <div class="slider_item">
+       <img src="img/c1.png" class="img-fluid" alt="" style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c2.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c3.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c6.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c16.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c7.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c9.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c8.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c10.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c15.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c13.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c12.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c1.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c11.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       <div class="slider_item">
+       <img src="img/c5.png" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+       </div>
+       </div>
+   </div>
+    
+    <div class="order-md-last order-sm-last order-last">
+      <footer text-alight center>
+        <div class="container-fluid  p-3 my-3">
+          (c) Головчанская Дарья
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id = "popup">
+    <div class="popWindow popup-main-window">
+      <div class="close-btn">&times;</div>
+      
+      <div class="row my-4">
+        <h2 class="form-text">Обратная связь</h2>
+      </div>
+        <form method="POST" class="row mx-5 my-2 gy-1 popup-form">
+        <label class = "col-12">Имя:<br><input type = "name" name = "popup-name" required></label>
+        <label class = "col-12">E-mail:<br><input type = "email" name = "popup-email" required></label>
+        <label class = "col-12">Сообщение:<br><textarea name = "popup-message"></textarea></label>
+        <label class = "col-12">
+          Согласен(на) с политикой обработки персональных данных
+        <input type = "checkbox" name = "popup-checkbox" required>
+        </label>
+        <label class = "col-12"><input type = "submit" name = "popup-submit" class = "popup-submit"></label>
+      </form>
+    </div>
+    <br>
+    <div class="popWindow thank-you-window">
+      <div class="close-btn">&times;</div>
+      <br><br>
+      <p class = "thank-you-message">
+      Сообщение отправлено
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
